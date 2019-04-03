@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Take a break!</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+    <div class="text">
+      <h1>Take a break</h1>
+      <h2>You need it 😉</h2>
+      <div class="btn">
+        <input type="button" value="Play chill music">
+
+      </div>
+    </div>
+  </div>
+  <footer>
+  <a href="https://github.com/LucasBaun" target="_blank"><i class="fab fa-github"></i></a>
+  </footer>
+  <script>
+    const button = document.querySelector('input');
+    button.addEventListener('click', updateButton);
+    var music = new Audio('chillstep.mp3');
+    function updateButton() {
+      if (button.value === 'Play chill music') {
+        button.value = 'Pause chill music';
+        music.play();
+      } else {
+        button.value = 'Play chill music';
+        music.pause();
+      }
+    }
+  </script>
+  </body>
+</html>

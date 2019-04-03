@@ -1,0 +1,123 @@
+body{
+  background-image: url(https://images.pexels.com/photos/346700/pexels-photo-346700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  max-height: 100vh;
+}
+
+.container{
+  max-width: 100vw;
+  max-height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+
+.text{
+  margin-top: 35vh;
+}
+
+h1{
+  font-size: 700%;
+  font-family: 'Lobster', cursive;
+  color: white;
+  text-shadow: 3px 3px black;
+  margin-bottom: 0px;
+}
+
+h2{
+  font-size: 150%;
+  font-family: 'Lobster two', cursive;
+  color: white;
+  text-shadow: 2px 2px black;
+  margin-top: 0px;
+
+}
+
+.btn{
+  margin-top: 2%;
+}
+
+input{
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  background-color: Transparent;
+  outline:none;
+  width: 260px;
+  height: 60px;
+  border-radius:40px;
+  border: 2px solid white;
+  font-family: 'lobster';
+  text-shadow: 2px 2px black;
+  font-size: 200%;
+  transition: 0.3s;
+}
+
+input:hover{
+  background-color: white;
+  color: Black;
+  text-shadow: none;
+  transition: 0.3s;
+}
+
+footer{
+  font-size: 150%;
+  font-family: 'Lobster', cursive;
+  text-shadow: 1.7px 1.7px black;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+i{
+  padding-left: 10px;
+  font-size: 175%;
+  margin-right: 50px;
+  transition: 0.3s;
+}
+
+i:hover{
+  font-size: 225%;
+  transition: 0.3s;
+}
+
+a{
+  color: white;
+}
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+
+body{
+  background-repeat: no-repeat;
+  background-size: 300vh;
+  background-position: center;
+  max-height: 100vh;
+  height: 100%;
+}
+
+h1{
+  font-size: 900%;
+}
+
+h2{
+  font-size: 350%;
+}
+
+input{
+  font-size: 600%;
+  width: 75%;
+  height: 15%;
+}
+
+input:hover{
+  background-color: Transparent;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+i{
+  font-size: 500%;
+}
+
+}
